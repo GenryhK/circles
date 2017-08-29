@@ -5,7 +5,7 @@ function getRandomArbitrary(min, max) {
 function createTable(size) {
 	let k;
 	let n;
-	
+
 	const table = document.createElement('table');
 	for (var i = 0; i < size; i++) {
 		const tr = document.createElement('tr');
@@ -26,14 +26,14 @@ function createTable(size) {
 
 
 	document.body.appendChild(table);
-	document.body.children[1].setAttribute(`id`,`table`);
+	document.body.children[1].setAttribute(`id`, `table`);
 
-let h =document.body.clientHeight-table.offsetHeight;
-let  w=document.body.clientWidth-table.offsetWidth;
-console.log(+w)
-table.style.position=`absolute`;
-table.style.top=h/2+`px` ;
-table.style.left=w/2+`px`;
+	let h = document.body.clientHeight - table.offsetHeight;
+	let w = document.body.clientWidth - table.offsetWidth;
+	console.log(+w)
+	table.style.position = `absolute`;
+	table.style.top = h / 2 + `px`;
+	table.style.left = w / 2 + `px`;
 
 
 }
